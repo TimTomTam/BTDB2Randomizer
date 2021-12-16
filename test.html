@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<style>
+		body{
+			color: #fff;
+			font-family: 'Nunito Semibold';
+			text-align: center;
+		}
+		#content {
+			position: relative; 
+			width: 100%;
+		}
+		#content table {
+			width: 100%;
+		}
+		#content table tr {
+			width: 100%;
+			position: relative;
+		}
+		#content img {
+			width: 100%;
+		}
+		#content input {
+			width: 100%;
+		}
+		#content button{
+			width: 100%;
+		}
+		.imageContainer {
+            position: relative;
+ 		}
+	</style>
+</head>
+
+<script>
+
+	function greyOut(id)
+	{
+		if(document.getElementById(id).style.opacity == 0.4){
+			document.getElementById(id).style.opacity = 1;
+			document.getElementById(id).value = 1;
+			
+		}
+		else{
+			document.getElementById(id).style.opacity = 0.4;
+			document.getElementById(id).value = 0;
+		}
+	}
+
+	function selectAll()
+	{
+		for(let i = 1;i<27;i++){
+			document.getElementById(i).style.opacity = 1;
+			document.getElementById(i).value = 1;
+		}
+
+	}
+
+	function deselectAll()
+	{
+		for(let i = 1;i<27;i++){
+			document.getElementById(i).style.opacity = 0.4;
+			document.getElementById(i).value = 0;
+		}
+
+	}
+
+</script>
+
+
+<body>
+
+	<div id="content">
+		<table bgcolor="gainsboro">
+			<tr>
+				<th><input onclick="selectAll()" type="image" src="./index_files/selectAll.jpg"/></th></th>
+				<th><input onclick="deselectAll()" type="image" src="./index_files/deselectAll.jpg"/></th></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Heroes/QuincyPortrait.png" id="1" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Heroes/GwendolinPortrait.png" id="2" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Heroes/ObynGreenFootPortrait.png" id="3" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Heroes/StrikerJonesPortrait.png" id="4" value="1"/></th>
+			</tr>
+		</table>
+		<table bgcolor="gainsboro">
+			<tr>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-DartMonkey.png" id="5" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-boomerangMonkey.png" id="6" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-bombshooter.png" id="7" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-tackshooter.png" id="8" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-iceMonkey.png" id="9" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-gluegunner.png" id="10" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-sniperMonkey.png" id="11" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-MonkeySub.png" id="12" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-MonkeyBuccaneer.png" id="13" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-MonkeyAce.png" id="14" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-HeliPilot.png" id="15" value="1"/></th>
+			</tr>
+		</table>
+		<table bgcolor="gainsboro">
+			<tr>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-MortarMonkey.png" id="16" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-DartlingGunner.png" id="17" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-WizardMonkey.png" id="18" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-SuperMonkey.png" id="19" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-NinjaMonkey.png" id="20" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/Alchemist_Icon.png" id="21" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/Druid_Icon.png" id="22" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-MonkeyVillage.png" id="23" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-BananaFarm.png" id="24" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-SpikeFactory.png" id="25" value="1"/></th>
+				<th><input onclick="greyOut(id)" type="image" src="./index_files/Towers/000-EngineerMonkey.png" id="26" value="1"/></th>
+			</tr>
+		</table>
+	</div>
+</body>
+		
